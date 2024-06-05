@@ -1,5 +1,5 @@
 layout: page
-title: "Data-Exploration-In-SQL"
+title: "Data Exploration In SQL"
 permalink: /portfolio/Data-exploration-in-sql/
 <html>
 	<head>
