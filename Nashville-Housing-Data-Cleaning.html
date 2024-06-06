@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Data Cleaning In SQL</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>NASHVILLE HOUSING DATA<br/>
+						CLEANING IN SQL</h1>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="https://zinotheanalyst.github.io/home/" class="logo">ZINO THE ANALYST</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="https://zinotheanalyst.github.io/home/Nashville-Housing-Data-Cleaning.html">NASHVILLE HOUSING</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://linkedin.com/in/zinotheanalyst" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+							<li><a href="https://x.com/zinotheanalyst" class="icon brands fa-twitter"><span class="label">twitter</span></a></li>
+							<li><a href="https://instagram.com/zinotheanalyst" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/zinotheanalyst" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<h2>Nashville Housing Data Cleaning</h2>
+									<p>In this project, SQL Server is used to explore Nashville housing data.</p>
+								</header>
+								<a href="#" class="image main"><img src="images/housing.jpg" alt="" /></a>
+								<p><h3>Source: <a href="https://github.com/AlexTheAnalyst/PortfolioProjects/blob/main/Nashville%20Housing%20Data%20for%20Data%20Cleaning.xlsx">Alex The Analyst</a></h3></p>
+								<p>The task of this project is to clean the Nashville Housing Data. The data contained duplicates, Nulls and Grouped values that needs to be in separate columns.</p>
+								<h3>Steps taken to complete this task include the following:</h3>
+								<p>Here is a summary of the queries and the insights they provide:</p>
+									<p style="margin-left: 25px;">
+									1. Import the raw Excel data into MSSQL. 
+									</p>
+									<p style="margin-left: 25px;">
+									2. View and review the data. 
+									</p>
+										<class="image main"><img src="images/housing-step2.jpg" alt="">
+									<p style="margin-left: 25px;">
+									3. STANDARDIZE THE SaleDate FORMAT (BEING DATETIME FORMAT, Converting to Date only format). 
+									</p>
+										<class="image main"><img src="images/housing-step3.jpg" alt="">
+									<p style="margin-left: 25px;">
+									4. POPULATE PropertyAddress NULL DATA.
+									</p>
+										<class="image main"><img src="images/housing-step4.jpg" alt="">
+									<p style="margin-left: 25px;">
+									5. BREAK OUT PropertyAddress INTO INDIVIDUAL COLUMNS (ADDRESS, CITY). 
+									</p>
+										<class="image main"><img src="images/housing-step5.jpg" alt="">
+									<p style="margin-left: 25px;">
+									6. BREAK OUT OwnerAddress INTO INDIVIDUAL COLUMNS (ADDRESS, CITY, STATE).
+									</p>
+										<class="image main"><img src="images/housing-step6.jpg" alt="">
+									<p style="margin-left: 25px;">
+									7. CHANGE Y AND N TO YES AND NO IN "SoldAsVacant" FIELD.
+									</p>
+										<class="image main"><img src="images/housing-step7.jpg" alt="">
+									<p style="margin-left: 25px;">
+									8. REMOVE DUPLICATES.
+									</p>
+										<class="image main"><img src="images/housing-step8.jpg" alt="">
+									<p style="margin-left: 25px;">
+									9. DELETE UNUSED COLUMNS 
+									</p>
+										<class="image main"><img src="images/housing-step9.jpg" alt="">
+								<ul class="actions special">
+									<li><a href="https://github.com/zinotheanalyst/Nashville-Housing-Data-Cleaning/blob/main/Nashville%20Housing%20Data%20Cleaning%20with%20Notes.sql" class="button large">VIEW ENTIRE SQL SCRIPT WITH NOTES</a></li>
+								</ul>
+							</article>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="alt"><ul>
+							<li><h3>Address</h3></li>
+							<p>1234 Somewhere Road #87257<br />
+							Nashville, TN 00000-0000</p>
+						</ul></section>
+						<section><ul>
+							<li><h3>Phone</h3></li>
+							<p><a href="tel:(+234) 915 415 8835">(+234) 915 415 8835</a></p>
+						</ul></section>
+						<section><ul>
+							<li><h3>Email</h3></li>
+							<p><a href="mailto:zinotheanalyst@gmail.com">zinotheanalyst@gmail.com</a></p>
+						</ul></section>		
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; zinotheanalyst 2024, All Rights Reserved</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
